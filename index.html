@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blush & Bloom Beauty Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background: linear-gradient(to right, #fff0f5, #ffe4e1);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .bg-hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)),
+      url('https://images.unsplash.com/photo-1583337130417-3346a1d3a5d4?auto=format&fit=crop&w=1950&q=80') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeInZoom 20s infinite alternate ease-in-out;
+    }
+    @keyframes fadeInZoom {
+      from { transform: scale(1); opacity: 1; }
+      to { transform: scale(1.04); opacity: 1; }
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Navigation -->
+  <nav class="bg-white/90 fixed w-full z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-rose-700">Blush & Bloom</h1>
+      <ul class="flex gap-6 text-sm font-semibold text-rose-600">
+        <li><a href="#home" class="hover:text-rose-800">Home</a></li>
+        <li><a href="#about" class="hover:text-rose-800">About</a></li>
+        <li><a href="#services" class="hover:text-rose-800">Services</a></li>
+        <li><a href="#gallery" class="hover:text-rose-800">Gallery</a></li>
+        <li><a href="#appointment" class="hover:text-rose-800">Appointment</a></li>
+        <li><a href="#contact" class="hover:text-rose-800">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-hero text-white">
+    <div class="text-center px-4">
+      <h2 class="text-5xl md:text-7xl font-bold drop-shadow-lg">Blush & Bloom</h2>
+      <p class="mt-4 text-xl md:text-2xl drop-shadow">Your Beauty, Our Passion 🌸</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-rose-700 mb-4">About Us</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Blush & Bloom Beauty Studio is a premium ladies salon nestled in the heart of Dum Dum, Kolkata. We offer a
+        tranquil, luxurious space where every woman is treated with elegance and care. From expert hair styling to
+        rejuvenating skin treatments and bridal transformations, our skilled team ensures you leave glowing inside and
+        out. Experience beauty tailored just for you – where tradition meets trend.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-rose-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-rose-700 mb-10">Our Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Hair Styling -->
+        <div class="bg-white p-6 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-rose-600 mb-3">✂️ Haircuts & Styling</h3>
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Layer, Step, U, V, Feather, Bob, Wolf Cuts</li>
+            <li>Hair Straightening & Smoothening</li>
+            <li>Botox & Keratin Treatments</li>
+            <li>Hair Spa (Loreal, Raga, Matrix, etc.)</li>
+          </ul>
+        </div>
+
+        <!-- Skincare -->
+        <div class="bg-white p-6 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-rose-600 mb-3">🌸 Facials & Skincare</h3>
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Fruit, Herbal, Gold, Pearl, Diamond Facials</li>
+            <li>O3+, Aroma Magic, Lotus, VLCC</li>
+            <li>De-tan & Brightening Treatments</li>
+            <li>Hydra Facial & Anti-aging solutions</li>
+          </ul>
+        </div>
+
+        <!-- Waxing & Threading -->
+        <div class="bg-white p-6 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-rose-600 mb-3">🧴 Waxing & Threading</h3>
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Chocolate, Honey, Roll-on, Brazilian Waxing</li>
+            <li>Threading – Eyebrows, Full Face, Chin, Forehead</li>
+            <li>Pedicure & Manicure Packages</li>
+          </ul>
+        </div>
+
+        <!-- Bridal -->
+        <div class="bg-white p-6 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-rose-600 mb-3">👰 Bridal & Party Makeup</h3>
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Bridal Makeup – Traditional & HD</li>
+            <li>Engagement & Reception Looks</li>
+            <li>Pre-bridal Packages</li>
+            <li>Saree Draping, Hairdo, Mehandi</li>
+          </ul>
+        </div>
+
+        <!-- Nail & Mehandi -->
+        <div class="bg-white p-6 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-rose-600 mb-3">💅 Nail & Mehandi</h3>
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Basic & Designer Mehandi</li>
+            <li>Gel Nail Art, Extensions</li>
+            <li>French Tips, Marble Art</li>
+          </ul>
+        </div>
+
+        <!-- Body & Relaxation -->
+        <div class="bg-white p-6 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-rose-600 mb-3">🧖 Body Care</h3>
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Body Polishing</li>
+            <li>Back Facial & Brightening</li>
+            <li>Aromatherapy & Relaxation</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-rose-700 mb-10">Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://images.unsplash.com/photo-1604909053368-7f6f3c33ccbd?auto=format&fit=crop&w=600&q=80" alt="Salon 1" class="rounded shadow hover:scale-105 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1621526335378-6d4df1c01fd6?auto=format&fit=crop&w=600&q=80" alt="Salon 2" class="rounded shadow hover:scale-105 transition duration-300">
+        <img src="https://images.unsplash.com/photo-1616394582783-6d0a52e8c289?auto=format&fit=crop&w=600&q=80" alt="Salon 3" class="rounded shadow hover:scale-105 transition duration-300">
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment -->
+  <section id="appointment" class="py-20 bg-rose-100">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-rose-700 mb-6">Book an Appointment</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded px-4 py-2">
+        <input type="email" placeholder="Email Address" class="w-full border border-gray-300 rounded px-4 py-2">
+        <input type="tel" placeholder="Phone Number" class="w-full border border-gray-300 rounded px-4 py-2">
+        <input type="date" class="w-full border border-gray-300 rounded px-4 py-2">
+        <select class="w-full border border-gray-300 rounded px-4 py-2">
+          <option>Select Service</option>
+          <option>Haircut</option>
+          <option>Facial</option>
+          <option>Bridal Makeup</option>
+          <option>Nail Art</option>
+          <option>Waxing</option>
+        </select>
+        <textarea placeholder="Additional Message" rows="4" class="w-full border border-gray-300 rounded px-4 py-2"></textarea>
+        <button type="submit" class="bg-rose-600 text-white font-semibold px-6 py-2 rounded hover:bg-rose-700 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-rose-700 mb-6">Get in Touch</h2>
+      <p class="text-gray-700 mb-2">📍 Address: 224, Kabi Mukunda Das Road, Dum Dum Cantonment, Kolkata - 700065</p>
+      <p class="text-gray-700 mb-2">📞 Phone: 7980088598 / 9073269887</p>
+      <p class="text-gray-700 mb-2">📧 Email: blushandbloom@example.com</p>
+      <p class="text-gray-700">🕒 Open daily from 11:00 AM – 11:00 PM</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-rose-600 text-white text-center py-6">
+    <p>&copy; 2024 Blush & Bloom Beauty Studio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
